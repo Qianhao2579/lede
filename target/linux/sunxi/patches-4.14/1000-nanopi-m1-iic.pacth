@@ -1,0 +1,13 @@
+Index: linux-4.14.109/arch/arm/boot/dts/sunxi-h3-h5.dtsi
+===================================================================
+--- linux-4.14.109.orig/arch/arm/boot/dts/sunxi-h3-h5.dtsi
++++ linux-4.14.109/arch/arm/boot/dts/sunxi-h3-h5.dtsi
+@@ -586,7 +586,7 @@
+ 			resets = <&ccu RST_BUS_I2C1>;
+ 			pinctrl-names = "default";
+ 			pinctrl-0 = <&i2c1_pins>;
+-			status = "disabled";
++			status = "okay";
+ 			#address-cells = <1>;
+ 			#size-cells = <0>;
+ 		};

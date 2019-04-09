@@ -138,6 +138,14 @@ define U-Boot/nanopi_m1_plus
   BUILD_DEVICES:=sun8i-h3-nanopi-m1-plus
 endef
 
+
+define U-Boot/nanopi_m1
+  BUILD_SUBTARGET:=cortexa7
+  NAME:=NanoPi M1 Plus (H3)
+  BUILD_DEVICES:=sun8i-h3-nanopi-m1
+endef
+
+
 define U-Boot/nanopi_neo
   BUILD_SUBTARGET:=cortexa7
   NAME:=U-Boot for NanoPi NEO (H3)
@@ -248,6 +256,7 @@ UBOOT_TARGETS := \
 	Linksprite_pcDuino \
 	Linksprite_pcDuino3 \
 	Lamobo_R1 \
+	nanopi_m1 \
 	nanopi_m1_plus \
 	nanopi_neo \
 	nanopi_neo_plus2 \

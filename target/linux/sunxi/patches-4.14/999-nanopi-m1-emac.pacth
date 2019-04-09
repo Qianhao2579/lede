@@ -1,0 +1,15 @@
+Index: linux-4.14.109/arch/arm/boot/dts/sun8i-h3-nanopi-m1.dts
+===================================================================
+--- linux-4.14.109.orig/arch/arm/boot/dts/sun8i-h3-nanopi-m1.dts
++++ linux-4.14.109/arch/arm/boot/dts/sun8i-h3-nanopi-m1.dts
+@@ -62,3 +62,10 @@
+ &ohci2 {
+ 	status = "okay";
+ };
++
++&emac {
++    phy-handle = <&int_mii_phy>;
++    phy-mode = "mii";
++    allwinner,leds-active-low;
++    status = "okay";
++};
